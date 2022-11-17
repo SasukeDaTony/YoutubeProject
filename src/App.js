@@ -1,7 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+// import ".env";
 
 function App() {
+  const baseUrl = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`;
+  fetch(baseUrl)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    })
+
+    .catch((error) => {
+      console.log(error);
+    });
+
   return (
     <div className="App">
       <header className="App-header">
