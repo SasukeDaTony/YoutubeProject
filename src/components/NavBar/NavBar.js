@@ -12,7 +12,7 @@ function NavBar() {
           <u>Welcome To Daniel & Tony's Youtube App!</u>
         </h3>
         <Link to="/about">
-          <>About Us</>
+          <h3>About Us</h3>
         </Link>
       </header>
     </div>
